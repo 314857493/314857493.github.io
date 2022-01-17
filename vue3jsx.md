@@ -110,7 +110,7 @@ v-if & v-else
 v-for
 
 ```html
-<div v-for="item in arr" :key="item.id">{{item.content}}</div>
+<div v-for="item in arr" :key="item.id">&#123;&#123;item.content&#125;&#125;</div>
 ```
 
 ```jsx
@@ -126,7 +126,7 @@ v-show
 ```
 
 ```jsx
-<div style={{ display: show ? "block" : "none" }}></div>
+<div style=&#123;&#123; display: show ? "block" : "none" &#125;&#125;></div>
 ```
 
 slot
@@ -208,10 +208,10 @@ const TestSlotJsx = defineComponent({
     return (
       <div>
         <Child
-          v-slots={{
+          v-slots=&#123;&#123;
             pre: () => <div>childPre</div>,
             next: () => <div>childNext</div>,
-          }}
+          &#125;&#125;
         >
           default slot
         </Child>
