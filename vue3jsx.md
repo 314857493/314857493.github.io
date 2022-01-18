@@ -108,10 +108,13 @@ v-if & v-else
 ```
 
 v-for
+{% raw %}
 
 ```html
-<div v-for="item in arr" :key="item.id">\{\{item.content\}\}</div>
+<div v-for="item in arr" :key="item.id">{{item.content}}</div>
 ```
+
+{% endraw %}
 
 ```jsx
 {
@@ -125,9 +128,13 @@ v-show
 <div v-show="show">content</div>
 ```
 
+{% raw %}
+
 ```jsx
-<div style=\{\{ display: show ? "block" : "none" \}\}></div>
+<div style={{ display: show ? "block" : "none" }}></div>
 ```
+
+{% endraw %}
 
 slot
 
@@ -195,6 +202,8 @@ v-slot
 </script>
 ```
 
+{% raw %}
+
 ```jsx
 import { defineComponent } from "vue";
 import Child from "./child";
@@ -208,10 +217,10 @@ const TestSlotJsx = defineComponent({
     return (
       <div>
         <Child
-          v-slots=\{\{
+          v-slots={{
             pre: () => <div>childPre</div>,
             next: () => <div>childNext</div>,
-          \}\}
+          }}
         >
           default slot
         </Child>
@@ -222,3 +231,5 @@ const TestSlotJsx = defineComponent({
 
 export default TestSlotJsx;
 ```
+
+{% endrow %}
