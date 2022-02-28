@@ -11,7 +11,7 @@ title: Typescript入门
 
 - ts 是微软开源的一种编程语言
 - ts 是 js 的超级，完全支持 js 并对 js 进行了拓展
-- ts 不能被常见的 js 引擎（如浏览器，nodejs）直接执行，需要将 ts 编译为 js 执行
+- ts 不能被常见的 js 运行环境（如浏览器，nodejs）直接执行，需要将 ts 编译为 js 执行
 - ts 有很多的配置项，可以根据不同配置编译成各种版本的 js，并提供相应 polyfill
 
 # 正文
