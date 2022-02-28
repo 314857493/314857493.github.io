@@ -1,1 +1,2 @@
-- [vue3jsx入门](/vue3jsx)
+- [vue3jsx 入门](/vue3jsx)
+- [Typescript 入门](/Typescript入门)
